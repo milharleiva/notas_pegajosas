@@ -1,0 +1,75 @@
+body {
+  background-image: url('/src/img/back2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.app{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: x-large;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.note-form {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-image: url('/src/img/fondo.png');
+  color: black;
+  margin-bottom: 10px;
+}
+
+.note-form input[type="text"],
+.note-form textarea {
+  resize: none;
+  color: black;
+  width: 100%;
+}
+
+.note-form button {
+  color: black;
+}
+
+.note {
+  background-image: url('./img/Pos\ It.png');
+  background-size: cover;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  width: 200px;  
+  height: 200px;
+}
+
+
+.note h3{
+  text-align: center;
+  background-size: cover;
+}
+
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .notes-list {
+    grid-template-columns: 1fr; /* Una nota por fila en pantallas pequeñas */
+  }
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  font-size: 0.8em; /* Ajusta el tamaño del texto aquí */
+}
+
+.important-note {
+  background-color: red;
+  color: white;
+  background-image: none; /* Esto eliminará la imagen de fondo */
+}
+.note-form .important-checkbox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
