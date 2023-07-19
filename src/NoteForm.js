@@ -46,7 +46,7 @@ const NoteForm = ({ addNote }) => {
             <input className="form-check-input" type="checkbox" checked={important} onChange={(e) => setImportant(e.target.checked)} />
             <label className="form-check-label">Importante</label>
           </div>
-          <button className="btn btn-primary" type="submit">Agregar Nota</button>
+          <button className="btn btn-primary my-3" type="submit">Agregar Nota</button>
         </div>
       </div>
     </form>
